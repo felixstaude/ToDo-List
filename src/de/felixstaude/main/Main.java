@@ -15,7 +15,6 @@ public class Main extends JFrame{
         JIntellitype.getInstance().registerHotKey(1, JIntellitype.MOD_CONTROL, (int)'L');
         JIntellitype.getInstance().registerHotKey(2, JIntellitype.MOD_CONTROL, (int)'K');
 
-
     }
 
 

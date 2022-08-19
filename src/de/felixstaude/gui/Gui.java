@@ -24,7 +24,6 @@ public class Gui extends JFrame {
         // no header
         setUndecorated(true);
 
-
         setVisible(true);
         // set hotkeys
         JIntellitype.getInstance().addHotKeyListener(new HotkeyListener() {
