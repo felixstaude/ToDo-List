@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="melloware.jintellitype" type="repository">
+    <properties maven-id="com.melloware:jintellitype:1.4.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/melloware/jintellitype/1.4.1/jintellitype-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
