@@ -6,21 +6,22 @@ import com.melloware.jintellitype.JIntellitype;
 import javax.swing.*;
 import java.awt.*;
 
-public class Gui extends JFrame {
+public class Gui extends JFrame{
 
     private Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     private int heightFrame = 500;
     private int widthFrame = 200;
     private int heightScreen = screenSize.height;
     private int widthScreen = screenSize.width;
-    private int posXFrame = widthScreen - widthFrame - 5;
-    private int posYFrame = (heightScreen / 2) - (heightFrame / 2);
+    private int posXFrame = getWidthScreen() - getWidthFrame() - 5;
+    private int posYFrame = (getHeightScreen() / 2) - (getHeightFrame() / 2);
 
     public Gui(){
         setResizable(false);
         setTitle("ToDo");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(posXFrame, posYFrame, widthFrame, heightFrame);
+        setBounds(getPosXFrame(), getPosYFrame(), getWidthFrame(), getHeightFrame());
+        getContentPane().add(new Panel());
         // no header
         setUndecorated(true);
 
@@ -35,6 +36,7 @@ public class Gui extends JFrame {
                         setVisible(false);
                     } else {
                         setVisible(true);
+
                     }
                 } else if (i == 2){
                     // kill process
@@ -42,6 +44,30 @@ public class Gui extends JFrame {
                 }
             }
         });
+    }
+
+    public int getHeightFrame(){
+        return heightFrame;
+    }
+
+    public int getWidthFrame(){
+        return widthFrame;
+    }
+
+    public int getHeightScreen(){
+        return heightScreen;
+    }
+
+    public int getWidthScreen(){
+        return widthScreen;
+    }
+
+    public int getPosXFrame(){
+        return posXFrame;
+    }
+
+    public int getPosYFrame(){
+        return posYFrame;
     }
 
 }
